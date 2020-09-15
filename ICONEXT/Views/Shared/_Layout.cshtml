@@ -18,19 +18,26 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
-                        
+
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Project">Project</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Project">Project Management</a>
                         </li>
+                       
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                About
+                                Master data Management
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Manpower">Manpower</a>
-                                <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Project">Day off</a>
+
+                                <a class="dropdown-item" asp-area="" asp-controller="employees" asp-action="Index">Manpower</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Holiday">Holiday</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Organization">Organization Position</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Team">Project Position with Cost</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="#">Report</a>
+
+
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Sing Out</a>
+                                <a class="dropdown-item" asp-action="login">Sing Out</a>
                             </div>
                         </li>
 
